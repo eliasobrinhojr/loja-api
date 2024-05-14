@@ -1,0 +1,4 @@
+spring:
+  application-name: loja-api
+api:
+  url: "https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com"
