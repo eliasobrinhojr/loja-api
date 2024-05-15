@@ -7,7 +7,7 @@ import java.util.List;
 public interface LojaService {
     List<ComprasResponse> getComprasOrdenadasPorMaiorValor();
 
-    ComprasResponse getMaiorCompraAno(int ano);
+    List<ComprasResponse> getMaiorCompraAno(int ano);
 
     List<?> getClientesFieis();
 

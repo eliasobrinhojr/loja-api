@@ -1,4 +1,7 @@
 spring:
   application-name: loja-api
+  redis:
+    host: 127.0.0.1
+    port: 6379
 api:
   url: "https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com"

@@ -1,6 +1,5 @@
 package com.eliasjr.lojaapi.controller;
 
-import com.eliasjr.lojaapi.client.response.ComprasResponse;
 import com.eliasjr.lojaapi.service.LojaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +23,7 @@ public class LojaController {
     }
 
     @GetMapping("/maior-compra/{ano}")
-    public ResponseEntity<ComprasResponse> getMaiorCompraAno(@PathVariable int ano) {
+    public ResponseEntity<?> getMaiorCompraAno(@PathVariable int ano) {
         return ResponseEntity.ok(lojaService.getMaiorCompraAno(ano));
     }
 
