@@ -1,7 +1,15 @@
 package com.eliasjr.lojaapi.service;
 
-import com.eliasjr.lojaapi.dto.CompraDTO;
+import com.eliasjr.lojaapi.client.response.ComprasResponse;
+
+import java.util.List;
 
 public interface LojaService {
-    CompraDTO getComprasOrdenadas();
+    List<ComprasResponse> getComprasOrdenadasPorMaiorValor();
+
+    ComprasResponse getMaiorCompraAno(int ano);
+
+    List<?> getClientesFieis();
+
+    String getRecomendacaoVinho(String clienteId);
 }

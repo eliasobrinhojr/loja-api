@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ProdutosReponse {
+public class ProdutosResponse {
     private int codigo;
     @JsonProperty("tipo_vinho")
     private String tipoVinho;
